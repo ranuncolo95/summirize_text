@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Finder | Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Results</h1>
+            <p>AI-powered analysis completed</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="results-section">
+            <div class="results-header">
+                <h2>Analysis Results</h2>
+                <a href="/" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Back to Analyzer
+                </a>
+            </div>
+            
+            <div class="input-display">
+                <h3>Your Input:</h3>
+                <p>{{ text_input }}</p>
+            </div>
+            
+            <div class="output-display">
+                <h3>AI Analysis:</h3>
+                <div class="output-content">
+                    {{ summary }}
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Service Finder. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

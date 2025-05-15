@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Finder | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Find what you need</h1>
+            <p>Discover AI power in just a few clicks</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2 class="form-title">AI Text Analizer</h2>
+            <form id="serviceForm" action="/result" method="post">
+                <div class="form-group">
+                    <label for="serviceType">Service Type</label>
+                    <!--
+                    <select id="serviceType" class="form-control" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="sentiment-analysis">sentiment-analysis</option>
+                        <option value="summarization">summarization </option>
+                        <option value="text-generation">text-generation</option>
+                        <option value="translation">translation</option>
+                        <option value="zero-shot-classification">zero-shot-classification</option>
+                    </select>
+                    -->
+                </div>
+            
+                
+                <div class="form-group">
+                    <label for="details"></label>
+                    <textarea name="text_input" id="details" class="form-control" rows="3" placeholder="Insert input..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-search"></i> Submit
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Service Finder. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
