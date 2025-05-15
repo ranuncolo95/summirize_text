@@ -19,7 +19,7 @@ async def homepage(request: Request):
 @app.post("/result", response_class=HTMLResponse)
 async def homepage(request: Request, text_input: str = Form(...)):
     classifier = pipeline("summarization")
-    summary = classifier(text_input)
+    summary = classifier(text_input[0:1025])
     return templates.TemplateResponse(
         request=request, 
         name="result.html", 
